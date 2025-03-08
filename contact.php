@@ -213,7 +213,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <h1>Quick</h1>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="contact.php">Contact Us</a>
         </div>
         <div class="column">
             <h1>Menu</h1>
