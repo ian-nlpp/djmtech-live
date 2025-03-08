@@ -1,7 +1,11 @@
 {
+  "version": 2,
   "functions": {
     "*.php": {
-      "runtime": "vercel-php@latest"
+      "runtime": "vercel-php@8.2.12"
     }
-  }
+  },
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
 }
