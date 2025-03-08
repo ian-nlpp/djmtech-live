@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/landingpage.css" />
+  <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>DJM TECHSTORE</title>
+</head>
+
+<body>
+    <header class="head">
+        <div class="left-side-button">
+            <div class="logo">
+                <img src="assets/DJMLogo.png">
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class='bx bx-menu'></i>
+            </div>
+            <nav class="navbar" id="nav-menu">
+                <a href="index.html" id="indicator">Home</a>
+                <a href="#">Products</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="search" />
+                <a href="#"> <i class="bx bx-search"></i> </a>
+            </div>
+        </div>
+        <div class="right-side-button">
+            <div class="wishlist-btn">
+                <a href="#"><i class="bx bx-heart"></i></a>
+            </div>
+            <div class="cart-btn">
+                <a href=""><i class="bx bxs-cart"></i></a>
+                <div class="notification">0</div>
+            </div>
+            <div class="login-buttons">
+                <a href="login.html"><i class="bx bxs-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+      
+        <section class="hero">
+            <div class="hero-image">
+                <img src="assets/images/item.png" alt="Tech Device" class="hero-img">
+                <img src="assets/images/heroheadphone.png" alt="Tech Device" class="hero-img">
+            </div>
+            <div class="hero-content">
+                <p class="hero-subtitle">Hot Products</p>
+                <h1 class="hero-title">Find devices that’s right for you</h1>
+                <p class="hero-description">Shop the latest and top-tier tech — all in one place. Upgrade your experience today!</p>
+                <button class="hero-button" onclick="window.location.href='#'">Shop Now</button>
+                <div class="hero-pagination">
+                    <span class="active" onclick="changeHero(0)"></span>
+                    <span onclick="changeHero(1)"></span>
+                    <span onclick="changeHero(2)"></span>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/nintendoswitch.png" alt="Tech Device" class="hero-img">
+                <img src="assets/galaxybuds.png" alt="Tech Device" class="hero-img">
+            </div>
+        </section>
+      
+        <section class="grid-container">
+            <div class="card processor">
+                <h3>PROCESSOR</h3>
+                <img src="assets/images/intel.png" alt="Processor">
+            </div>
+            <div class="card keyboard">
+                <h3>KEYBOARD</h3>
+                <img src="assets/images/keyboard.png" alt="Keyboard">
+            </div>
+            <div class="card motherboard">
+                <h3>MOTHERBOARD</h3>
+                <img src="assets/images/motherboard.png" alt="Motherboard">
+            </div>
+            <div class="card monitor">
+                <h3>MONITOR</h3>
+                <img src="assets/images/monitor.png" alt="Monitor">
+            </div>
+            <div class="card webcam">
+                <h3>WEBCAM</h3>
+                <img src="assets/images/webcam.png" alt="Webcam">
+            </div>
+            <div class="card mouse">
+                <h3>MOUSE</h3>
+                <img src="assets/images/mouse.png" alt="Mouse">
+            </div>
+        </section>
+
+    <section class="deals-container">
+        <div class="deals-content">
+            <div class="deals-split">
+                <h1>BEST DEALS</h1>
+                <div>
+                    <a href="#">Shop Now</a>
+                </div>
+            </div>
+            <div>
+                <img src="assets/images/cpu-cooler.png" alt="image">
+            </div>
+            
+        </div>
+        <div class="deals-content">
+            <div class="deals-split">
+                <h1>NEW ARRIVAL</h1>
+                <div>
+                    <a href="#">Shop Now</a>
+                </div>
+            </div>
+            <div>
+                <img src="assets/images/rgb-keyboard.png" alt="image">
+            </div>
+    </section>
+
+    <section class="delivery-info">
+        <div class="delivery-content">
+            <div>
+                <img src="assets/icons/delivery-truck.png" alt="icon">
+            </div>
+            <div>
+                <h3>Free Delivery</h3>
+                <p>from Place</p>
+            </div>
+        </div>
+        <div class="delivery-content">
+            <div>
+                <img src="assets/icons/rate-star.png" alt="icon">
+            </div>
+            <div>
+                <h3>Best Quality</h3>
+                <p>brand</p>
+            </div>
+        </div>
+        <div class="delivery-content">
+            <div>
+                <img class="duration-icon" src="assets/icons/duration.png" alt="icon">
+            </div>
+            <div>
+                <h3>1 Year</h3>
+                <p>for free return</p>
+            </div>
+        </div>
+        <div class="delivery-content">
+            <div>
+                <img src="assets/icons/credit-card.png" alt="icon">
+            </div>
+            <div>
+                <h3>Payment</h3>
+                <p>Secure</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <div class="container">
+            <h2><strong>Featured</strong> <span class="highlight">Products</span></h2>
+            <div class="tabs">
+                <a href="#" class="tab active" data-tab="new">New</a>
+                <a href="#" class="tab" data-tab="best-sellers">Best Sellers</a>
+                <a href="#" class="tab" data-tab="recommended">Recommended</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="suggest-product">
+        <div class="see-more">
+            <a href="#">See More</a>
+        </div>
+        <div class="suggestcards">
+            <!-- Products will be injected here dynamically -->
+        </div>
+    </section>
+    
+    
+    <section class="promo-section">
+        <div class="promo-container">
+            <!-- First Promo Section -->
+            <div class="promo-card">
+                <div class="promo-text">
+                    <div class="promo-title">
+                        <h1><strong>DJM</strong> HEADSET</h1>
+                    </div>
+                    <div class="promo-image">
+                        <img src="assets/images/headphone.png" alt="DJM Headset">
+                    </div>
+                    <div>
+                        <p><strong class="exclusive-title">EXCLUSIVE OFFERS</strong></p>
+                        <p>Find the perfect tech for you at the best prices—shop now before they’re gone!</p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="customer-reviews">
+            <h2>What Our Customer <span class="highlight">Says</span></h2>
+            <div class="review-container">
+                <div class="review-card">
+                    <img src="assets/images/customer1.png" alt="Customer" class="review-img">
+                    <h3>NABE CABRITO</h3>
+                    <p class="review-title">“Amazing Quality & Fast Delivery!”</p>
+                    <p class="review-text">
+                        <span class="quote">"</span> I ordered a new smartphone from DJMTech, and it arrived earlier than expected! The quality is top-notch, and the customer service was super helpful. <span class="quote">"</span>
+                    </p>
+                </div>
+                <div class="review-card">
+                    <img src="assets/images/customer2.png" alt="Customer" class="review-img">
+                    <h3>RYAN RAMONES</h3>
+                    <p class="review-title">“Best Deals & Smooth Transaction!”</p>
+                    <p class="review-text">
+                        <span class="quote">"</span> DJMTech had the best price on the gaming laptop I wanted. The checkout process was seamless, and my order was shipped quickly. <span class="quote">"</span>
+                    </p>
+                </div>
+                <div class="review-card">
+                    <img src="assets/images/customer3.png" alt="Customer" class="review-img">
+                    <h3>JAMES MISA</h3>
+                    <p class="review-title">“Reliable & Trustworthy!”</p>
+                    <p class="review-text">
+                        <span class="quote">"</span> I was hesitant to buy gadgets online, but DJMTech exceeded my expectations! The product was 100% authentic. and the customer support team ensured a hassle-free experience. Highly recommended! <span class="quote">"</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+</main>
+
+  <footer>  
+    <div class="upperfooter">
+        <div class="column footlogo">
+            <div class="logofooter"><img src="assets/DJMLogo.png"></div>
+            <div class="djmtagline">
+            <p>“DJMTech – Empowering You with the Latest Technology.”</p>
+            </div>
+        </div>
+        <div class="column">
+            <h1>Quick</h1>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="column">
+            <h1>Menu</h1>
+            <a href="index.html">Home</a>
+            <a href="#">Product</a>
+        </div>
+    </div>
+
+    <!-- Ensure the <hr> is on a new line -->
+    <div class="footer-divider">
+        <hr>
+    </div>
+
+    <div class="bottom-footer">
+        <div class="layout">
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" class="logoContainer">
+                    <img src="assets/icons/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://instagram.com" target="_blank" class="logoContainer">
+                    <img src="assets/icons/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://twitter.com" target="_blank" class="logoContainer">
+                    <img src="assets/icons/twitter.png" alt="Twitter">
+                </a>
+            </div>
+            <p>&copy; 2025 By Lintech Inc. All Rights Reserved. 
+                <a href="terms-of-use.html">Terms of Use</a> <a href="privacy-policy.html">Privacy Policy</a>
+            </p>
+        </div>
+    </div>
+    
+</footer>
+<script src="scripts/heroswitch.js"></script>
+<script src="scripts/tabswtich.js"></script>
+<script src="scripts/hamburgermenu.js"></script>
+<script src="scripts/animationstyle.js"></script>
+</body>
+</html>

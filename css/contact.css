@@ -1,0 +1,168 @@
+section {
+    opacity: 0.3; /* Barely visible at first */
+    transform: translateY(50px); /* Move down slightly */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+section.show {
+    opacity: 1; /* Fully visible when scrolled */
+    transform: translateY(0);
+}
+
+/* Main container */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    width: 100%;
+    margin: 100px auto;
+    gap: 100px;
+}
+
+/* Left Side: Contact Info */
+.contact-info {
+    width: 50%;
+}
+
+.get-in-touch {
+    font-size: 5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.get-in-touch .touch {
+    color: #6900FD;
+}
+
+.contact-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-details i {
+    color: #7000ff;
+    font-size: 1.2rem;
+}
+
+/* Map */
+.map-container {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Right Side: Contact Form */
+.contact-form-container {
+    width: 45%;
+    text-align: left;
+}
+
+.form-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: none;
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+.submit-btn {
+    background: linear-gradient(90deg, #7000ff, #a000ff);
+    color: white;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(90deg, #5a00cc, #8800ff);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 50px; /* Adjusted spacing for better mobile layout */
+        margin: 50px auto; /* Reduced margin for smaller screens */
+    }
+
+    .contact-info,
+    .contact-form-container {
+        width: 100%;
+    }
+
+    .get-in-touch {
+        font-size: 3rem; /* Reduce heading size for mobile */
+    }
+
+    .contact-description {
+        font-size: 0.9rem; /* Adjust font for better readability */
+        margin-bottom: 15px;
+    }
+
+    .contact-details p {
+        font-size: 0.9rem; /* Slightly smaller text */
+        flex-direction: column;
+        justify-content: left; /* Center text on mobile */
+    }
+
+    .contact-details img {
+        width: 18px; /* Adjust icon size for mobile */
+    }
+
+    .contact-form-container {
+        margin-top: 30px;
+        text-align: center; /* Center form content */
+    }
+
+    .contact-form {
+        align-items: center; /* Align form items in center */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem; /* Adjust input font size */
+        padding: 12px; /* Reduce padding */
+    }
+
+    .submit-btn {
+        padding: 12px; /* Adjust button padding */
+        font-size: 0.9rem; /* Smaller font for button */
+    }
+}

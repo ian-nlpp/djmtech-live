@@ -1,0 +1,9 @@
+{
+    "name": "dev/djmtech",
+    "description": "DJM Tech e-Commerce Site Project",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}

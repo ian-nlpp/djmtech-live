@@ -1,0 +1,110 @@
+/* Privacy Policy Container */
+.terms-policy-title {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Title Styling */
+.terms-policy-title h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 50px;
+}
+
+.intro {
+    margin-bottom: 50px;
+}
+
+.last-updated {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Section Titles (Numbered Sections) */
+.terms-policy-content {
+    margin-bottom: 40px; /* Space after content */
+}
+
+hr {
+    border: none; /* Remove default border */
+    border-top: 1px solid #1a202c71; /* Custom light gray border */
+    margin: 40px 0; /* Space before and after the line */
+}
+
+.terms-policy-content:last-child {
+    border-bottom: none; /* Removes border from last section */
+}
+
+/* Section Titles (Numbered Sections) */
+.terms-policy-content h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #7000ff;
+    margin-top: 0; /* Remove extra spacing at the top */
+}
+
+/* Subtitles (a, b, c, etc.) */
+.terms-policy-content h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Paragraphs */
+.terms-policy-content p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Ensure consistent styling for bullet lists */
+.terms-policy-content ul {
+    list-style-type: disc; /* Standard bullet style */
+    padding-left: 20px; /* Indent the bullet list */
+    margin-top: 10px;
+}
+
+.terms-policy-content ul li {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.8;
+    margin-left: 10px; /* Fine-tune indentation */
+}
+
+@media screen and (max-width: 768px) {
+    .terms-policy-title {
+        padding: 20px 10px; /* Reduce padding */
+        text-align: left; /* Center text */
+    }
+
+    .terms-policy-title h1 {
+        font-size: 2rem; /* Decrease title size */
+        margin-bottom: 30px;
+    }
+
+    .terms-policy-content h2 {
+        font-size: 1.5rem; /* Adjust section title */
+    }
+
+    .terms-policy-content h3 {
+        font-size: 1.1rem; /* Adjust subtitle */
+    }
+
+    .terms-policy-content p,
+    .terms-policy-content ul li {
+        font-size: 0.95rem; /* Adjust text size */
+        line-height: 1.5;
+    }
+
+    .terms-policy-content {
+        margin-bottom: 30px;
+    }
+
+    hr {
+        margin: 30px 0; /* Adjust spacing */
+    }
+}

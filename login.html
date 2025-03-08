@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+    <title>Login Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/authentication.css">
+</head>
+<body>
+    <div class="container">
+        <div id="loginForm" class="form-container">
+            <div class="logo"><a href="index.html"><img src="assets/DJMLogo.png"></a>
+                <br>
+                <div class="logoname">
+                    <small>DJM TECH</small>
+                </div>
+            </div>
+            <?php if (isset($_GET['error'])): ?>
+                <div style="color: red; margin-bottom: 10px;"><?php echo htmlspecialchars(urldecode($_GET['error'])); ?></div>
+            <?php endif; ?>
+            <h2>LOGIN</h2>
+            <form action="login.php" method="POST">
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <div class="input-container">
+                        <input type="password" name="password" id="loginPassword" required>
+                        <span class="toggle-password" onclick="togglePassword('loginPassword')">👁</span>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; white-space: nowrap; width: 100%;">
+                    <label style="display: flex; align-items: center; margin: 0; white-space: nowrap;">
+                        <input type="checkbox" name="remember" style="margin-right: 5px; vertical-align: middle; "> Remember Me
+                    </label>
+                    <span class="forgot-password" style="vertical-align: middle; white-space: nowrap;">
+                        <a href="forgot-password.php">Forgot your password?</a>
+                    </span>
+                </div>
+                <div class="terms">By continuing, you agree to the <a href="terms-of-use.html">Terms of Use</a> and <a href="privacy-policy.html">Privacy Policy</a>.</div>
+                <button class="btn" type="submit">LOG IN</button>
+            </form>
+            <div class="toggle-form">Don't have an account yet? <a href="signup.html">SIGN UP</a></div>
+        </div>
+    </div>
+    
+    <script>
+        function togglePassword(inputId) {
+            var passwordInput = document.getElementById(inputId);
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+            } else {
+                passwordInput.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>

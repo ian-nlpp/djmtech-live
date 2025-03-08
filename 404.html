@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Page Not Found - DJM Tech</title>
+    <style>
+        .error-container {
+            text-align: center;
+            padding: 50px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .error-container h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .error-container p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .error-container a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(90deg, rgb(112, 0, 255), rgb(160, 0, 255));
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .error-container a:hover {
+            background: linear-gradient(90deg, rgb(160, 0, 255), rgb(112, 0, 255));
+        }
+    </style>
+</head>
+<body>
+    <header class="head">
+        <div class="left-side-button">
+            <div class="logo"><img src="assets/DJMLogo.png"></div>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About</a>
+                <a href="contact.php">Contact</a>
+            </nav>
+        </div>
+        <div class="right-side-button">
+            <div class="wishlist-btn">
+                <a href="wishlist.php"><i class="bx bx-heart"></i></a>
+            </div>
+            <div class="cart-btn">
+                <a href="cart.php"><i class="bx bxs-cart"></i></a>
+                <div class="notification">0</div>
+            </div>
+            <div class="login-buttons">
+                <a href="login.html"><i class="bx bxs-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="error-container">
+            <h1>Oops! Page Not Found</h1>
+            <p>This page doesn’t exist. Please check the URL or return to our homepage.</p>
+            <a href="index.html">Back to Home</a>
+        </div>
+    </main>
+</body>
+</html>
